@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Chestionar de opinie</title>
+   </head>
+   <style>
+   .button {
+       background-color: white;
+       color: black;
+       cursor: pointer;
+   }
+   
+   .container {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+   }
+   
+   .text-container {
+       display: flex;
+       justify-content: space-between;
+       width: 100%;
+       border: 1px solid #ccc;
+       padding: 10px;
+   }
+   
+   .text-left, .text-right {
+       flex: 1;
+   }
+   .opinie {
+    text-align: center;
+   }
+   </style>
+   
+   <body>
+       <h1 class="opinie">CHESTIONAR DE OPINIE</h1>
+        <br>
+        <div class="container">
+        <p>Bună ziua, numele meu este Iulian! Mă adresez dumneavoastră cu rugămintea de a
+        completa prezentul chestionar, <br>răspunzând într-o
+        manieră   sinceră și subiectivă la cele 9
+        întrebãri cu privire la preferințele dumneavoastra
+        asupra educatiei. <br>Vã mulțumesc anticipat!</p>
+        </div>
+        <br>
+   <ol>
+        <li>Sexul dumneavoastră este: </li><br>
+        <ul>
+            <li>
+            <button class="button" onclick="changeColor(this)">Feminin</button>
+            </li><br>
+            <li>
+            <button class="button" onclick="changeColor(this)">Masculin</button>
+            </li><br>
+            <script>
+                function changeColor(button) {
+                    if (button.style.backgroundColor==="yellow") {
+                        button.style.backgroundColor="white";
+                    }
+                    else {
+                        button.style.backgroundColor="yellow";
+                    }
+                }
+            </script>
+        </ul>
+        <br>
+        <li>Categoria de varsta: </li><br>
+        <ul>
+            <li>
+            <button class="button" onclick="changeColor(this)">7-10 ani</button>
+            </li><br>
+            <li>
+            <button class="button" onclick="changeColor(this)">11-14 ani</button>
+            </li><br>
+            <li>
+            <button class="button" onclick="changeColor(this)">15-18 ani</button>
+            </li><br>
+            <li>
+            <button class="button" onclick="changeColor(this)">Peste 18 ani</button>
+            </li><br>
+            <script>
+                function changeColor(button) {
+                    if (button.style.backgroundColor==="yellow") {
+                        button.style.backgroundColor="white";
+                    }
+                    else {
+                        button.style.backgroundColor="yellow";
+                    }
+                }
+            </script>
+        </ul>
+        <br>
+        <li>Credeti ca prin comunicare se incurajeaza activitatea si responsibilitatea tuturor participantilor la procesul educational?</li><br>
+        <ul>
+            <li>
+                <button class="button" onclick="changeColor(this)">Da</button>
+            </li><br>
+            <li>
+                <button class="button" onclick="changeColor(this)">Nu</button>
+            </li><br>
+            <li>
+                <button class="button" onclick="changeColor(this)">Probabil</button>
+            </li><br>
+            <script>
+                function changeColor(button) {
+                    if (button.style.backgroundColor==="yellow") {
+                        button.style.backgroundColor="white";
+                    }
+                    else {
+                        button.style.backgroundColor="yellow";
+                    }
+                }
+            </script>
+        </ul>
+        <br>
+        <li>Acceptati noutatile, chiar daca sunt contrare metodelor traditionale?</li><br>
+        <ul>
+            <li>
+                <button class="button" onclick="changeColor(this)">Da</button>
+            </li><br>
+            <li>
+                <button class="button" onclick="changeColor(this)">Nu</button>
+            </li><br>
+            <script>
+                function changeColor(button) {
+                    if (button.style.backgroundColor==="yellow") {
+                        button.style.backgroundColor="white";
+                    }
+                    else {
+                        button.style.backgroundColor="yellow";
+                    }
+                }
+            </script>
+        </ul>
+        <br>
+        <li>Cea mai importanta competenta care ar trebui sa o aiba un reprezentant in consiliul elevilor este: </li><br>
+        <form>
+                    <input type="checkbox" id="initiative" name="initiative" value="initiative">
+                    <label for="initiative">sa aiba initiativa</label><br>
+                    <input type="checkbox" id="ability" name="ability" value="comunications">
+                    <label for="ability">sa aiba abilitati de comunicare si dec izionale</label><br>
+                    <input type="checkbox" id="teaching" name="teaching" value="teaching">
+                    <label for="teaching">sa fie bun la invatatura</label><br>
+        </form>
+        <br>
+        <li>Ce apreciezi in primul rand la scoala ta?</li><br>
+        <form>
+                    <input type="checkbox" id="activity" name="activity" value="activity">
+                    <label for="activity">activitatea de predare - invatare</label><br>
+                    <input type="checkbox" id="teachers" name="teachers" value="teachers">
+                    <label for="teachers">relatiile cu profesorii</label><br>
+                    <input type="checkbox" id="elev" name="elev" value="elev">
+                    <label for="elev">relatiile cu elevii</label><br>
+                    <input type="checkbox" id="life" name="life" value="life">
+                    <label for="life">pregatirea pentru viata / piata muncii</label><br>
+        </form>
+        <br>
+        <li>Care sunt materiile voastre preferate?</li><br>
+        <form>
+            <div class="text-container">
+                <div class="text-left">
+                    <input type="checkbox" id="romanian" name="romanian" value="romanian">
+                    <label for="romanian">Limba si literatura romana</label><br>
+                    <input type="checkbox" id="mathematik" name="mathematik" value="mathematik">
+                    <label for="mathematik">Matematica</label><br>
+                    <input type="checkbox" id="geography" name="geography" value="geography">
+                    <label for="geography">Geografie</label><br>
+                    <input type="checkbox" id="history" name="history" value="history">
+                    <label for="history">Istorie</label><br>
+                    <input type="checkbox" id="fizic" name="fizic" value="fizic">
+                    <label for="fizic">Fizica</label><br>
+                    <input type="checkbox" id="sport" name="sport" value="sport">
+                    <label for="sport">Educatie fizica</label><br>
+                    <input type="checkbox" id="Biology" name="Biology" value="Biology">
+                    <label for="Biology">Biologie</label><br>
+                    <input type="checkbox" id="music" name="music" value="music">
+                    <label for="music">Educatie muzicala</label><br>
+                </div>
+             <div class="text-right">
+                    <input type="checkbox" id="economy" name="economy" value="economy">
+                    <label for="economy">Economie</label><br>
+                    <input type="checkbox" id="chimic" name="chimic" value="chimic">
+                    <label for="chimic">Chimie</label><br>
+                    <input type="checkbox" id="info" name="info" value="info">
+                    <label for="info">Informatica</label><br>
+                    <input type="checkbox" id="antre" name="antre" value="antre">
+                    <label for="antre">Educatie antreprenoriala</label><br>
+                    <input type="checkbox" id="conta" name="conta" value="conta">
+                    <label for="conta">Contabilitate</label><br>
+                    <input type="checkbox" id="desen" name="desen" value="desen">
+                    <label for="desen">Educatie plastica</label><br>
+                    <input type="checkbox" id="logica" name="logica" value="logica">
+                    <label for="logica">Logica, argumentare si comunicare</label><br>
+                    <input type="checkbox" id="psiho" name="psiho" value="psiho">
+                    <label for="psiho">Psihologie</label><br>
+            </div>
+        </div>    
+        </form>
+        <br>
+        <li>Ce te nemultumeste in primul rand la scoala ta?</li><br>
+        <form>
+                    <input type="checkbox" id="quality" name="quality" value="quality">
+                    <label for="quality">Calitatea predarii</label><br>
+                    <input type="checkbox" id="base" name="base" value="base">
+                    <label for="base">Baza materiala a scolii</label><br>
+                    <input type="checkbox" id="rules" name="rules" value="rules">
+                    <label for="rules">Regulamentul de ordine interioara</label><br>
+        </form>
+        <br>
+        <li>Alegeti din lista de mai jos 2 cuvinte care definesc cel mai bine scoala voastra: </li><br>
+        <form>
+                    <input type="checkbox" id="democratic" name="democratic" value="democratic">
+                    <label for="democratic">Democratie</label><br>
+                    <input type="checkbox" id="quality" name="quality" value="quality">
+                    <label for="quality">Calitate</label><br>
+                    <input type="checkbox" id="performance" name="performance" value="performance">
+                    <label for="performance">Performanta</label><br>
+                    <input type="checkbox" id="interes" name="interes" value="interes">
+                    <label for="interes">Lipsa de interes</label><br>
+        </form>
+        <br>
+</ol>
+<div id="messageDiv"></div>
+<script>
+function sendMessage() {
+  document.body.innerHTML = '';
+  
+  var messageDiv = document.createElement('div');
+  messageDiv.textContent = "Trimitere reusita! Va multumim pentru timpul acordat.";
+  document.body.appendChild(messageDiv);
+
+  
+  setTimeout(function() {
+    window.location.reload();
+  }, 4000);
+}
+
+function resetPage() {
+  window.location.reload();
+}
+</script>
+
+<div style="display: flex; justify-content: center; margin-right: 10px;">
+<button onclick="sendMessage()">Trimite</button>
+</div>
+
+<div style="display: flex; justify-content: center; margin-right: 10px;">
+<button onclick="resetPage()">Resetare</button>
+</div>
+
+</body>
+</html>
